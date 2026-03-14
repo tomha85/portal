@@ -1,7 +1,6 @@
 import { Bell, CalendarRange, Filter, Search } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { BrandLogo } from '@/components/brand/BrandLogo';
 
 export function Header() {
   return (
