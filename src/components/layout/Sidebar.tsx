@@ -18,12 +18,12 @@ const items = [
 
 export function Sidebar() {
   return (
-    <aside className="flex h-screen w-72 shrink-0 flex-col border-r border-border bg-[#070f1f]">
-      <div className="px-4 pb-3 pt-4">
+    <aside className="flex w-64 shrink-0 flex-col border-r border-border bg-[#070f1f]">
+      <div className="border-b border-border/60 px-4 py-4">
         <BrandLogo className="justify-start" />
       </div>
 
-      <nav className="flex-1 space-y-1 border-t border-border/70 px-4 py-4">
+      <nav className="space-y-1 px-4 py-4">
         {items.map((item) => (
           <NavLink
             key={item.to}

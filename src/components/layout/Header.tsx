@@ -4,8 +4,12 @@ import { Button } from '@/components/ui/button';
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-20 flex h-16 items-center justify-end border-b border-border bg-background/80 px-6 backdrop-blur">
-      <div className="ml-auto flex items-center gap-2">
+    <header className="sticky top-0 z-20 flex h-16 items-center justify-between border-b border-border bg-background/80 px-6 backdrop-blur">
+      <div className="flex items-center">
+        <BrandLogo className="justify-start" />
+      </div>
+
+      <div className="flex items-center gap-2">
         <div className="relative w-80">
           <Search className="pointer-events-none absolute left-3 top-2.5 h-4 w-4 text-slate-400" />
           <Input placeholder="Search camera, incident, rule, person" className="pl-9" />
