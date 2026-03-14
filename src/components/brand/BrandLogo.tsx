@@ -8,20 +8,20 @@ type BrandLogoProps = {
 export function BrandLogo({ compact = false, className }: BrandLogoProps) {
   return (
     <div className={cn('flex items-center gap-3', className)}>
-      <div className="relative h-11 w-11 shrink-0 rounded-xl border border-emerald-300/35 bg-gradient-to-br from-slate-900 via-[#102338] to-[#0f2f2b] p-1.5 shadow-lg shadow-emerald-900/20">
+      <div className="relative h-11 w-11 shrink-0 rounded-xl border border-cyan-200/60 bg-gradient-to-br from-[#123465] via-[#1a4f92] to-[#2a7bc2] p-1.5 shadow-lg shadow-cyan-900/35 ring-1 ring-cyan-100/30">
         <svg viewBox="0 0 100 100" className="h-full w-full" aria-hidden="true">
           <defs>
             <linearGradient id="triangleFill" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#f9f6c9" />
-              <stop offset="100%" stopColor="#d7efad" />
+              <stop offset="0%" stopColor="#fff8cc" />
+              <stop offset="100%" stopColor="#e8f9be" />
             </linearGradient>
             <linearGradient id="letterBlue" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#38bdf8" />
-              <stop offset="100%" stopColor="#2563eb" />
+              <stop offset="0%" stopColor="#93e8ff" />
+              <stop offset="100%" stopColor="#1e63ff" />
             </linearGradient>
           </defs>
 
-          <polygon points="50,8 92,86 8,86" fill="url(#triangleFill)" stroke="#9ca3af" strokeWidth="2.5" />
+          <polygon points="50,8 92,86 8,86" fill="url(#triangleFill)" stroke="#cbd5e1" strokeWidth="2.5" />
           <text x="50" y="62" textAnchor="middle" fontSize="44" fontWeight="700" fill="url(#letterBlue)">
             A
           </text>
@@ -36,9 +36,8 @@ export function BrandLogo({ compact = false, className }: BrandLogoProps) {
 
       {!compact && (
         <div className="min-w-0">
-          <p className="truncate text-xs uppercase tracking-[0.16em] text-cyan-200/80">Vietpro Tech</p>
-          <p className="truncate text-sm font-semibold text-white">Suprema Safety Command</p>
-          <p className="truncate text-[11px] text-slate-400">Enterprise PPE &amp; Industrial Risk Intelligence</p>
+          <p className="truncate text-base font-bold tracking-[0.08em] text-cyan-100">VIETPRO TECH <span className="text-white">Suprema</span></p>
+          <p className="truncate text-[11px] text-slate-300">Industrial Safety Intelligence Platform</p>
         </div>
       )}
     </div>
