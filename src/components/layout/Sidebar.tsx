@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import { Activity, AlertTriangle, BarChart3, Building2, Camera, Cog, FileText, Gauge, Radar, ShieldAlert } from 'lucide-react';
-import { BrandLogo } from '@/components/brand/BrandLogo';
 import { cn } from '@/lib/utils';
 
 const items = [
@@ -18,12 +17,8 @@ const items = [
 
 export function Sidebar() {
   return (
-    <aside className="flex h-screen w-72 shrink-0 flex-col border-r border-border bg-[#070f1f]">
-      <div className="px-4 pb-3 pt-4">
-        <BrandLogo className="justify-start" />
-      </div>
-
-      <nav className="flex-1 space-y-1 border-t border-border/70 px-4 py-4">
+    <aside className="w-64 border-r border-border bg-[#070f1f] p-4">
+      <nav className="space-y-1">
         {items.map((item) => (
           <NavLink
             key={item.to}
