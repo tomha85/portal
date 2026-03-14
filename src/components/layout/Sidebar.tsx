@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { Activity, AlertTriangle, BarChart3, Building2, Camera, Cog, FileText, Gauge, Radar, ShieldAlert } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { BrandLogo } from '@/components/brand/BrandLogo';
 
 const items = [
   { to: '/', label: 'Overview', icon: Gauge },
@@ -18,9 +19,8 @@ const items = [
 export function Sidebar() {
   return (
     <aside className="w-64 border-r border-border bg-[#070f1f] p-4">
-      <div className="mb-6 rounded-2xl bg-gradient-to-br from-[#174ea6] to-[#0a1f3f] p-4">
-        <p className="text-xs uppercase text-blue-100/70">Enterprise EHS AI</p>
-        <h1 className="mt-1 text-lg font-semibold">Safety Vision Portal</h1>
+      <div className="mb-6 rounded-2xl border border-white/10 bg-gradient-to-br from-[#0e2447] via-[#0a1b36] to-[#0b1f2a] p-4 shadow-2xl shadow-black/25">
+        <BrandLogo />
       </div>
       <nav className="space-y-1">
         {items.map((item) => (

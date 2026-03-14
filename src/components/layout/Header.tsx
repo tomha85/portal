@@ -1,10 +1,12 @@
 import { Bell, CalendarRange, Filter, Search } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
+import { BrandLogo } from '@/components/brand/BrandLogo';
 
 export function Header() {
   return (
     <header className="sticky top-0 z-20 flex h-16 items-center gap-3 border-b border-border bg-background/80 px-6 backdrop-blur">
+      <BrandLogo compact className="mr-1" />
       <div className="relative w-96">
         <Search className="pointer-events-none absolute left-3 top-2.5 h-4 w-4 text-slate-400" />
         <Input placeholder="Search camera, incident, rule, person" className="pl-9" />
