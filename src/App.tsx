@@ -10,9 +10,10 @@ import { CamerasPage } from '@/pages/CamerasPage';
 import { RulesZonesPage } from '@/pages/RulesZonesPage';
 import { ReportsPage } from '@/pages/ReportsPage';
 import { AdminPage } from '@/pages/AdminPage';
+import { motion } from 'framer-motion';
 import type { ReactNode } from 'react';
 
-const wrap = (node: ReactNode) => node;
+const wrap = (node: ReactNode) => <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2 }}>{node}</motion.div>;
 
 export function App() {
   return (
